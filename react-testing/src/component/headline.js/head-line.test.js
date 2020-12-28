@@ -45,7 +45,7 @@ describe('Testing component  <HeadLine /> ', () => {
           beforeEach(() => {
              wrapper = setUp();
           });
-
+             
           it('Should not render', () => {
             const component = findByTestAtrr(wrapper, 'headlineClass');
             expect(component.length).toBe(0);

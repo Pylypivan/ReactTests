@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Headline from './head-line';
-import { findByTestAtrr } from '../../../../Utils/index';
+import { findByTestAtrr } from '../../../Utils/index';
 import checkPropTypes from 'check-prop-types';
 
 
@@ -31,7 +31,7 @@ describe('Testing component  <HeadLine /> ', () => {
            }]
          };   
          const propsErr =  checkPropTypes(Headline.propTypes, expectedProps, 'props', Headline.name);
-         expect(propsErr).toBeUndefined();  
+         expect(propsErr).toBeUndefined(); 
      });
      
   });
